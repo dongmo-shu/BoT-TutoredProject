@@ -1,0 +1,156 @@
+:root{
+    --primary_font: 'Montserrat', sans-serif;
+    --secondary_font: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #F6FFF9;
+    font-family: var(--primary_font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: var(--primary_font);
+}
+
+h2{
+    font-size: 32px;
+    font-family: var(--primary_font);
+}
+
+p{
+    font-size: 24px;
+    font-family: var(--secondary_font);
+}
+
+.container {
+    display: flex;
+    gap: 160px; /* Add horizontal spacing between the main divs */
+}
+
+.image-container img {
+    width: 750px;
+    height: 850px;
+    border-radius: 120px 0 120px 0;
+}
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header h1 {
+    margin: 20px 0 0 0;
+}
+
+.header p {
+    margin-top: 10px;
+}
+
+.header a {
+    color: #0096C7;
+    text-decoration: underline;
+}
+
+.form-fields input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.form-fields hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin: 22px 0 22px 0;
+}
+
+.terms input {
+    width: 25px;
+    height: 25px;
+}
+
+.terms label {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.terms label a {
+    text-decoration: underline;
+}
+
+.terms a {
+    color: #0096C7;
+    text-decoration: none;
+}
+
+.actions #continue-button {
+    background-color: #0096C7;
+    color: white;
+    width: 570px;
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.actions #google-signup {
+    background-color: transparent;
+    border: 1px solid #0096C7;
+    color: #0096C7;
+    width: 570px;
+    height: 60px;
+    border-radius: 14px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the Google logo and text */
+    text-decoration: none;
+}
+
+.google-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.separator hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.separator p {
+    margin: 0 40px;
+    font-weight: 500;
+}
+
+

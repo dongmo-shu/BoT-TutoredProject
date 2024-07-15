@@ -1,0 +1,210 @@
+:root{
+    --primary_font: 'Montserrat', sans-serif;
+    --secondary_font: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #F6FFF9;
+    font-family: var(--primary_font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    font-family: var(--primary_font);
+}
+
+h2{
+    font-size: 32px;
+    font-family: var(--primary_font);
+}
+
+p{
+    font-size: 24px;
+    font-family: var(--secondary_font);
+}
+
+.container {
+    display: flex;
+    gap: 160px; /* Add horizontal spacing between the main divs */
+}
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header h1 {
+    margin: 20px 0 0 0;
+}
+
+.header p {
+    margin: 0;
+}
+
+.header a {
+    color: #0096C7;
+    text-decoration: underline;
+}
+
+/*Start of the signup form*/
+.login-box {
+    background-color: #fff;
+    margin: 40px 0 30px 0;
+    padding: 30px 20px 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--secondary_font);
+    font-weight: 600;
+    max-width: 570px;
+}
+  
+.user-box {
+    position: relative;
+    margin: 0;
+}
+  
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 32px;
+    color: #333;
+    margin: 0 0 30px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+}
+  
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0 20 0;
+    font-size: 32px;
+    color: #000000;
+    opacity: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/*Move label text up by 20px*/
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 16px;
+  color: #333;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+  
+.password-toggle-icon i:hover {
+    color: #000;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin: 0 0 22px 0;
+}
+
+.terms input {
+    width: 25px;
+    height: 25px;
+}
+
+.terms label {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.terms label a {
+    text-decoration: underline;
+}
+
+.terms a {
+    color: #0096C7;
+    text-decoration: none;
+}
+/*End of the signup form*/
+
+.actions #continue-button {
+    background-color: #0096C7;
+    color: white;
+    width: 570px;
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+}
+
+.actions #google-signup {
+    background-color: transparent;
+    border: 1px solid #0096C7;
+    color: #0096C7;
+    width: 570px;
+    height: 60px;
+    border-radius: 14px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the Google logo and text */
+    text-decoration: none;
+}
+
+.google-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+}
+
+.separator hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.separator p {
+    margin: 0 40px;
+    font-weight: 500;
+}
+
+.image-container img {
+    width: 750px;
+    height: 850px;
+    border-radius: 120px 0 120px 0;
+}

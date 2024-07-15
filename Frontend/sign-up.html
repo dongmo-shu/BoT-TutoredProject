@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-Up</title>
+    <!--Montserrat font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!--Outfit font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-container">
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="header">
+                <h1>Create an account</h1>
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </div>
+
+            
+            <div class="form-fields">
+                <input type="text" placeholder="Full Name" class="input-field">
+                <hr>
+                <input type="email" placeholder="Email Address" class="input-field">
+                <hr>
+                <input type="password" placeholder="Password" id="password" class="input-field">
+                <hr>
+                
+                <div class="terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the <a href="terms.html">terms and conditions</a></label>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="continue-button" value="Submit">Continue</button>
+                <div class="separator">
+                    <hr>
+                    <p>OR</p>
+                    <hr>
+                </div>
+                <a id="google-signup" href="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token&scope=email profile">
+                    <img src="assets/icons/logo_google_g_icon.svg" alt="Google Logo" class="google-logo"> Sign up with Google
+                </a>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/images/signup-image.jpg" alt="Sign Up Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
