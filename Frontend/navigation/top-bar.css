@@ -1,0 +1,147 @@
+:root{
+    --primary_font: 'Montserrat', sans-serif;
+    --secondary_font: 'Outfit', sans-serif;
+    --off-black: #000000;
+    --default-blue: #0096C7;
+    --secondary-blue: #CAF0F8;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    margin: 0 0;
+    background-color: var(--off-black);
+    color: white;
+    position: relative;
+    font-family: var(--primary_font);
+    font-weight: 600;
+}
+
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+nav .nav-links,
+nav .auth-links {
+    display: flex;
+}
+
+nav .nav-links a,
+nav .auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.auth-links button{
+    font-size: 24px;
+    font-family: inherit;
+    padding: 10px 12px;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--primary_font);
+}
+
+.mobile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.mobile-menu hr {
+    border: 0.5px solid #444;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        padding: 20px 80px;
+    }
+    nav .logo a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    nav .nav-links a,
+    nav .auth-links a {
+        margin: 0 10px;
+        font-size: 16px;
+    }   
+
+    nav .auth-links {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu{
+        font-size: 16px;
+    }
+
+    .not-tablet,
+    .mobile-menu hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+        margin: 0 0;
+        background-color: var(--off-black);
+        color: white;
+        position: relative;
+        font-family: var(--primary_font);
+        font-weight: 600;
+    }
+
+    nav .logo a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+        
+
+    nav .nav-links{
+        display: none;
+    }
+    nav .auth-links {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+}

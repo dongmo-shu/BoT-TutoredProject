@@ -10,6 +10,7 @@
     <!--Outfit font family -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
     <link rel="stylesheet" href="sign-up.css">
     <link rel="stylesheet" href="sign-up-mobile.css">
     <link rel="stylesheet" href="sign-up-tablet.css">
@@ -24,7 +25,7 @@
             <div class="header">    
                 <img src="logo.png" alt="Company Logo" class="logo">
                 <h1>Create an account</h1>
-                <p>Already have an account? <a href="login.html">Sign In</a> </p>
+                <p>Already have an account? <a href="../sign-in page/sign-in.html">Sign In</a> </p>
             </div>
 <!--Start of signup form -->
             <div class="login-box">
@@ -66,7 +67,11 @@
         </div>
         <!--Start of form container -->
         <div class="image-container">
-            <img src="../assets/images/signup-image.jpg" alt="Sign Up Image">
+            <picture>
+                <source srcset="../assets/images/signup-image.jpg" media="(min-width: 1080px)">
+                <source srcset="../assets/images/signup-image-tablet.png" media="(min-width: 768px)">
+                <img src="../assets/images/signup-image-tablet.png" class="image-product" alt="signup image">
+            </picture>
         </div>
     </main>
 
