@@ -1,0 +1,81 @@
+@media only screen and  (max-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 24px;
+        font-family: var(--primary_font);
+    }
+    
+    h2{
+        font-size: 18px;
+        font-family: var(--primary_font);
+    }
+    
+    p{
+        font-size: 14px;
+        font-family: var(--secondary_font);
+    }
+
+    .All-info{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+        width: 370px;
+        display: flex;
+        margin: 0;
+    }
+
+    .All-info hr{
+        height: 2px;
+        color: white;
+        background-color: black;
+        width: 100%;
+    }
+
+    .account-info{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .profile-image-container img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-text-container {
+        margin: 20px 0 0 0;
+        gap: 0;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 150px;
+        margin: 0 50px 0 0;
+    }
+
+    .All-info label{
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .All-info input{
+        font-size: 14px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .save-changes-button{
+        margin-top: 20px;
+    }
+
+    .save-changes{
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Sign-Up</title>
+        <!--Montserrat font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!--Outfit font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="account.css">
+        <link rel="stylesheet" href="account-mini.css">
+        <link rel="stylesheet" href="account-tablet.css">
+        <link rel="stylesheet" href="account-mobile.css">
+        <link rel="stylesheet" href="right-navbar.css">
+        <link rel="stylesheet" href="top-navbar.css">
+    </head>
+    <!--Start of the top navigation bar-->
+        <nav>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Hotel Listings</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="auth-links">
+                <a href="account.html">
+                    <img src="../assets/images/Profile image.png" alt="profile picture">
+                </a>
+                <a href="sign-in page/sign-in.html"><button class="sign-in-btn">Logout</button></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="not-tablet">
+                
+                <a href="#">Home Page</a>
+                <a href="#">About Us</a>
+                <a href="#">Hotel Listings</a>
+                <a href="#">Support</a>
+                <hr>
+            </div>
+            <div class="auth-links">
+                <img src="../assets/images/Profile image.png" alt="profile picture">
+                <a href="sign-in page/sign-in.html">Logout</a>
+                <hr> 
+            </div>
+            <div class="user-settings">
+                <a href="#">Account</a>
+                <a href="#">Privacy & Security</a>
+                <a href="#">Preferences</a>
+                <a href="#">Bookings</a>
+            </div>
+        </div>
+    <!--End of the top navigation bar-->
+        <main>
+            <div class="All-info">
+                <h1>Account Information</h1>
+                <hr>
+                <div class="account-info">
+                    <div class="profile-image-container">
+                        <h2>Profile Image</h2>
+                        <img src="../assets/images/Profile image.png" alt="profile picture">
+                    </div>
+                    <div class="profile-text-container">
+                        <div class="user-calling">
+                            <div class="input-group">
+                                <label for="Username">Username</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-group">
+                                <label for="fullname">Full name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="user-contact">
+                            <div class="input-group">
+                                <label for="Phone number">Phone Number</label>
+                                <input type="tel">
+                            </div>
+                            <div class="input-group">
+                                <label for="Email address">Email Address</label>
+                                <input type="email">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="save-changes-button">
+                    <button class="save-changes">Save Changes</button>
+                </div>
+                
+            </div>
+             <!--Star of the right navigation bar-->
+            <div class="navbar">
+                <h1>Settings</h1>
+                <hr>
+                <div class="navbar-links active">
+                    <img src="../assets/icons/Ellipse-8.png" alt="account icon"> 
+                    <a href="account.html">Account</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../assets/icons/Ellipse-8.png" alt="privary and security icon">
+                    <a href="#privacy-security">Privacy & Security</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../assets/icons/Ellipse-8.png" alt="Preferences">
+                    <a href="#preferences">Preferences</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../assets/icons/Ellipse-8.png" alt="Bookings">
+                    <a href="#booking-history">Bookings</a> 
+                </div>
+                
+                
+            </div>
+        </main>
+
+    <script src="top-navbar.js"></script>
+
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Sign-Up</title>
+        <!--Montserrat font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!--Outfit font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="security.css">
+        <link rel="stylesheet" href="security-mini.css">
+        <link rel="stylesheet" href="security-tablet.css">
+        <link rel="stylesheet" href="security-mobile.css">
+        <link rel="stylesheet" href="../right-navbar.css">
+        <link rel="stylesheet" href="../top-navbar.css">
+    </head>
+    <!--Start of the top navigation bar-->
+        <nav>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Hotel Listings</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="auth-links">
+                <a href="../account.html">
+                    <img src="../../assets/images/Profile image.png" alt="profile picture">
+                </a>
+                <a href="sign-in page/sign-in.html"><button class="sign-in-btn">Logout</button></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="not-tablet">
+                
+                <a href="#">Home Page</a>
+                <a href="#">About Us</a>
+                <a href="#">Hotel Listings</a>
+                <a href="#">Support</a>
+                <hr>
+            </div>
+            <div class="auth-links">
+                <img src="../../assets/images/Profile image.png" alt="profile picture">
+                <a href="../sign-in page/sign-in.html">Logout</a>
+                <hr> 
+            </div>
+            <div class="user-settings">
+                <a href="#">Account</a>
+                <a href="#">Privacy & Security</a>
+                <a href="#">Preferences</a>
+                <a href="#">Bookings</a>
+            </div>
+        </div>
+    <!--End of the top navigation bar-->
+        <main>
+            <div class="All-info">
+                <h1>Account Security</h1>
+                <hr>
+                <div class="password-container">
+                    <div class="password-text">
+                        <h2>Password</h2>
+                        <p>Update your password</p>
+                    </div>
+                    <div class="password-form">
+                        <div class="password-form-text">
+                            <input type="text" placeholder="Current Password">
+                            <input type="text" placeholder="New Password">
+                        </div>
+                        <div class="password-form-btn">
+                            <button>Change Password</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="multi-factor-container">
+                    <div class="multi-factor-text">
+                        <h2>Multi-Factor Authentification</h2>
+                        <p>Add an extra layer of protection during the 
+                            login process into your account</p>
+                    </div>
+                    <div class="multi-factor-option">
+                        <div class="google-app flex">
+                            <p class="custom-p">Google App Authenticator</p>
+                            <button class="setup-btn">Setup</button>
+                        </div>
+                        <hr>
+                        <div class="recovery-email flex">
+                            <p class="custom-p">Recovery Email</p>
+                            <button class="enable-btn">Enable</button>
+                        </div>
+                        <hr>
+                        <div class="phone-verification flex">
+                            <p class="custom-p">Phone SMS Verification</p>
+                            <button class="enable-btn">Enable</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!--Star of the right navigation bar-->
+            <div class="navbar">
+                <h1>Settings</h1>
+                <hr>
+                <div class="navbar-links active">
+                    <img src="../../assets/icons/Ellipse-8.png" alt="account icon"> 
+                    <a href="account.html">Account</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../../assets/icons/Ellipse-8.png" alt="privary and security icon">
+                    <a href="#privacy-security">Privacy & Security</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../../assets/icons/Ellipse-8.png" alt="Preferences">
+                    <a href="#preferences">Preferences</a>
+                </div>
+                <div class="navbar-links">
+                    <img src="../../assets/icons/Ellipse-8.png" alt="Bookings">
+                    <a href="#booking-history">Bookings</a> 
+                </div>
+                
+                
+            </div>
+        </main>
+
+    <script src="../top-navbar.js"></script>
+
+
+
+</html>

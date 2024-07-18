@@ -1,0 +1,112 @@
+:root{
+    --primary_font: 'Montserrat', sans-serif;
+    --secondary_font: 'Outfit', sans-serif;
+    --off-black: #000000;
+    --default-blue: #0096C7;
+    --secondary-blue: #CAF0F8;
+    --background: #F6FFF9;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+h1{
+    font-size: 40px;
+    font-family: var(--primary_font);
+}
+
+h2{
+    font-size: 32px;
+    font-family: var(--primary_font);
+}
+
+p{
+    font-size: 24px;
+    font-family: var(--secondary_font);
+}
+
+.All-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 100px;
+    width: 1200px;
+}
+
+.All-info hr{
+    height: 2px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.account-info{
+    display: flex;
+}
+
+.profile-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-text-container {
+    margin: 26px 0 0 40px;
+    gap: 0;
+}
+
+.user-calling, .user-contact{
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    margin: 0 50px 0 0;
+}
+
+.All-info label{
+    font-size: 32px;
+    font-family: var(--primary_font);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.All-info input {
+    font-size: 24px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid var(--default-blue);
+    border-radius: 10px;
+    padding: 0 20px;
+   
+}
+
+.All-info label, .All-info input{
+    margin-bottom: 10px;
+}
+
+.save-changes-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 60px;
+}
+
+.save-changes{
+    width: 230px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--default-blue);
+    border: none;
+    border-radius: 10px;
+    font-family: var(--primary_font);
+}

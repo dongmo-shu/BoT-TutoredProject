@@ -1,0 +1,130 @@
+:root{
+    --primary_font: 'Montserrat', sans-serif;
+    --secondary_font: 'Outfit', sans-serif;
+    --off-black: #000000;
+    --default-blue: #0096C7;
+    --secondary-blue: #CAF0F8;
+    --background: #F6FFF9;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+h1{
+    font-size: 40px;
+    font-family: var(--primary_font);
+}
+
+h2{
+    font-size: 32px;
+    font-family: var(--primary_font);
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 24px;
+    font-family: var(--secondary_font);
+}
+
+.All-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 100px;
+    width: 1200px;
+}
+
+.All-info hr, .multi-factor-container hr{
+    height: 1px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.password-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.password-form-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.password-form-text input{
+    display: flex;
+    border: 1px solid var(--default-blue);
+    border-radius: 10px;
+    width: 400px;
+    height: 55px;
+    font-size: 24px;
+    padding: 0 20px;
+    margin: 0 20px 20px 0;
+    font-family: inherit;
+}
+
+.password-form-btn button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--default-blue);
+    color: white;
+    font-size: 24px;
+    padding: 15px 15px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.password-text p, .multi-factor-text p{
+    font-family: var(--secondary_font);
+    margin-top: 0;
+}
+
+.multi-factor-container{
+    margin-top: 20px;
+}
+
+.multi-factor-option {
+    padding-inline: 30px;
+    border: 1px solid var(--default-blue);
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.flex p{
+    margin: 20px 0 20px 0;
+}
+
+.flex button{
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.custom-p{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.setup-btn{
+    border: none;
+    background-color: var(--default-blue);
+    color: white;
+}
+
+.enable-btn{
+    background-color: inherit;
+    border: 1px solid var(--default-blue);
+}

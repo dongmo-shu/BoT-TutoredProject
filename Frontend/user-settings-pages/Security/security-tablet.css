@@ -1,0 +1,58 @@
+@media only screen and  (max-width: 1080px) and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 32px;
+        font-family: var(--primary_font);
+    }
+    
+    h2{
+        font-size: 24px;
+        font-family: var(--primary_font);
+    }
+    
+    p{
+        font-size: 18px;
+        font-family: var(--secondary_font);
+    }
+
+    .All-info{
+        width: 800px;
+        padding: 0;
+    }
+
+    .password-form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .password-form-btn {
+        align-self: flex-end;
+        margin-top: 20px;
+    }
+
+    .password-form-text input{
+        border: 1px solid var(--default-blue);
+        border-radius: 10px;
+        width: 315px;
+        height: 55px;
+        font-size: 18px;
+        padding: 0 20px;
+        margin: 0 20px 10px 0;
+    }
+
+    .flex button{
+        width: 100px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 10px;
+        font-family: inherit;
+    }
+
+    .custom-p{
+        font-size: 20px;
+    }
+}
